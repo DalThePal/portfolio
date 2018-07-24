@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+.App {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.NavBar {
+    align-items: center;
+    background-color: #424949;
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    justify-content: flex-end;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.route {
+    color: #D5D8DC;
+    font-family: quicksand;
+    margin: 10px;
+}
+
+.About {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.background-img {
+    background-image: url('./images/pine-trees.jpg');
+    height: 50vh;
+    width: 100%;
+}
+
+.profile-pic {
+    background-image: url('./images/profile-pic.JPG');
+    background-position: center;
+    background-size: cover;
+    border: 2px solid black;
+    border-radius: 50%;
+    height: 200px;
+    position: absolute;
+    top: 275px;
+    width: 200px;
+    z-index: 9;
+}
+
+.first-name {
+    font-family: quicksand;
+    font-size: 38pt;
+    left: 275px;
+    position: absolute;
+    top: 390px;
+}
+
+.last-name {
+    font-family: quicksand;
+    font-size: 38pt;
+    position: absolute;
+    right: 300px;
+    top: 390px;
+}
+
+.profile {
+    align-items: center;
+    background-color: #EAEDED;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.profile-content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 300px;
+    margin-bottom: 40px;
+    width: 50%;
+}
+
+.about-paragraph {
+    font-family: quicksand;
+    font-size: 18pt;
+    text-align: center;
+}
+
+.Contact {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+input {
+    background-color: white;
+    border: 2px solid black;
+    font-family: quicksand; 
+    margin: 10px;
+    width: 50%;
+}
+
+textarea {
+    background-color: white;
+    border: 2px solid black;
+    font-family: quicksand;
+    height: 200px; 
+    margin: 10px;
+    width: 50%;
+}
+
+button {
+    background-color: white;
+    border: 2px solid black;
+    font-family: quicksand; 
+    margin: 10px;
+}
+
+h1 {
+    font-family: quicksand;
+}
+
+.Projects {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.projects-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.Project {
+    height: 300px;
+    margin: 10px;
+    width: 300px;
+}
+
+.project-pic-dnd {
+    background-image: url('./images/dnd1.png');
+    background-position: center;
+    background-size: cover;
+    border: 2px solid black;
+    height: 300px;
+    width: 300px;
+}
+
+.project-pic-v {
+    background-image: url('./images/vShoppify.png');
+    background-position: center;
+    background-size: cover;
+    border: 2px solid black;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    width: 300px;
+}
+
+.project-pic-plant {
+    background-image: url('./images/plantme1.png');
+    background-position: center;
+    background-size: cover;
+    border: 2px solid black;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    width: 300px;
+}
+
+.project-pic-shed {
+    background-image: url('./images/shedwool.png');
+    background-position: center;
+    background-size: cover;
+    border: 2px solid black;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    width: 300px;
+}
+
+.project-info {
+    align-items: center;
+    background-color: rgba(0,0,0,.5);
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    width: 300px;
+    z-index: 9;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.Skills {
+    align-items: center;
+    background-color: #EAEDED;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.skills-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 130px;
+    justify-content: center;
+    margin: 20px;
+    width: 130px;
+}
+
+.skill-picture {
+    object-fit: cover;
+    object-position: center;
+    width: 100px;
+}
+
+h2 {
+    color: #EAEDED;
+}
+
+h3 {
+    color: black;
+}
