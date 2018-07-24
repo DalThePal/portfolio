@@ -48,4 +48,10 @@ app.post('/email', function create(req, res, next) {
     res.send(200, req.body);
 });
 
+const path = require('path'); // Usually moved to the start of file
+
+app.get('*', (req, res)=>{
+    res.sendFile(path.join(__dirname, '../build/index.html'));
+});
+
 app.listen(port, () => console.log('Listening on port 3005'));
