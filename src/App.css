@@ -54,20 +54,21 @@
     z-index: 9;
 }
 
+.full-name {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
 .first-name {
     font-family: quicksand;
     font-size: 38pt;
-    left: 275px;
-    position: absolute;
-    top: 390px;
 }
 
 .last-name {
     font-family: quicksand;
     font-size: 38pt;
-    position: absolute;
-    right: 300px;
-    top: 390px;
 }
 
 .profile {
@@ -83,8 +84,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
     margin-top: 100px;
+    padding-top: 80px;
     width: 50%;
 }
 
@@ -220,7 +221,6 @@ h1 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 100vh;
     padding-top: 80px;
     width: 100%;
 }
@@ -254,4 +254,31 @@ h2 {
 
 h3 {
     color: black;
+}
+
+@media only screen and (max-width: 600px) {
+    .profile-content {
+        width: 75%;
+    }
+
+    .full-name {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 200px;
+        width: 100%;
+    }
+
+    input {
+        width: 75%;
+    }
+
+    textArea {
+        width: 75%;
+    }
+
+    .NavBar {
+        justify-content: space-around;
+    }
 }
