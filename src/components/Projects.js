@@ -32,7 +32,7 @@ export default class Projects extends Component {
                         </div>
                     </div>
                     <div className='Project'>
-                        <div className='project-pic-v' onClick={() => this.handleHoverChange({isDNDHovering: !this.state.isDNDHovering})} onMouseEnter={() => this.handleHoverChange({isVHovering: !this.state.isVHovering})} onMouseLeave={() => this.handleHoverChange({isVHovering: !this.state.isVHovering})}>
+                        <div className='project-pic-v' onClick={() => this.handleHoverChange({isVHovering: !this.state.isVHovering})} onMouseEnter={() => this.handleHoverChange({isVHovering: !this.state.isVHovering})} onMouseLeave={() => this.handleHoverChange({isVHovering: !this.state.isVHovering})}>
                             {this.state.isVHovering ? <div className='project-info'>
                                 <h2>VSHOPPIFY</h2>
                                 <div className='button-container'>
@@ -43,7 +43,7 @@ export default class Projects extends Component {
                         </div>                    
                     </div>
                     <div className='Project'>
-                        <div className='project-pic-plant' onClick={() => this.handleHoverChange({isDNDHovering: !this.state.isDNDHovering})} onMouseEnter={() => this.handleHoverChange({isPlantHovering: !this.state.isPlantHovering})} onMouseLeave={() => this.handleHoverChange({isPlantHovering: !this.state.isPlantHovering})}>
+                        <div className='project-pic-plant' onClick={() => this.handleHoverChange({isPlantHovering: !this.state.isPlantHovering})} onMouseEnter={() => this.handleHoverChange({isPlantHovering: !this.state.isPlantHovering})} onMouseLeave={() => this.handleHoverChange({isPlantHovering: !this.state.isPlantHovering})}>
                             {this.state.isPlantHovering ? <div className='project-info'>
                                 <h2>PLANTME</h2>
                                 <div className='button-container'>
@@ -53,7 +53,7 @@ export default class Projects extends Component {
                         </div>                    
                     </div>
                     <div className='Project'>
-                        <div className='project-pic-shed' onClick={() => this.handleHoverChange({isDNDHovering: !this.state.isDNDHovering})} onMouseEnter={() => this.handleHoverChange({isShedHovering: !this.state.isShedHovering})} onMouseLeave={() => this.handleHoverChange({isShedHovering: !this.state.isShedHovering})}>
+                        <div className='project-pic-shed' onClick={() => this.handleHoverChange({isShedHovering: !this.state.isShedHovering})} onMouseEnter={() => this.handleHoverChange({isShedHovering: !this.state.isShedHovering})} onMouseLeave={() => this.handleHoverChange({isShedHovering: !this.state.isShedHovering})}>
                             {this.state.isShedHovering ? <div className='project-info'>
                                 <h2>SHEDWOOL</h2>
                                 <div className='button-container'>
