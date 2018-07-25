@@ -42,14 +42,14 @@
 }
 
 .profile-pic {
-    background-image: url('./images/profile-pic.JPG');
+    background-image: url('./images/image_6483441.JPG');
     background-position: center;
     background-size: cover;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     border-radius: 50%;
     height: 200px;
     position: absolute;
-    top: 275px;
+    top: 40vh;
     width: 200px;
     z-index: 9;
 }
@@ -63,12 +63,12 @@
 
 .first-name {
     font-family: quicksand;
-    font-size: 38pt;
+    font-size: 42pt;
 }
 
 .last-name {
     font-family: quicksand;
-    font-size: 38pt;
+    font-size: 42pt;
 }
 
 .profile {
