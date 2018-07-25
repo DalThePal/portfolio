@@ -17,7 +17,7 @@ export default class Projects extends Component {
 
     render() {
         return (
-            <div className='Projects'>
+            <div className='Projects' ref='projects'>
                 <h1>PROJECTS</h1>
                 <div className='projects-content'>
                     <div className='Project'>

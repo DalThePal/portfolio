@@ -10,7 +10,7 @@ export default class Skills extends Component {
 
     render() {
         return (
-            <div className='Skills'>
+            <div className='Skills' ref='skills'>
                 <h1>SKILLS</h1>
                 <div className='skills-content'>
                     <div className='skill'>

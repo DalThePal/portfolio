@@ -33,7 +33,7 @@ export default class Contact extends Component {
 
     render() {
         return (
-            <div className='Contact'>
+            <div className='Contact' ref='contact'>
                 <h1>CONTACT</h1>
                 <input placeholder='YOUR NAME' onChange={(e) => this.handleChange({name: e.target.value})}/>
                 <input placeholder='YOUR EMAIL' onChange={(e) => this.handleChange({email: e.target.value})}/>

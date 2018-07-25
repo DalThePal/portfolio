@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 
 import NavBar from './components/NavBar';
 import About from './components/About';
@@ -12,25 +13,47 @@ class App extends Component {
   constructor() {
     super();
     this.changeScrollTo = this.changeScrollTo.bind(this);
+    this.about = React.createRef();
+    this.projects = React.createRef();
+    this.skills = React.createRef();
+    this.contact = React.createRef();
     this.state = {
       scrollTo: 'about'
     };
   }
 
-  changeScrollTo(string) {
-    this.setState({
-      scrollTo: string
-    });
+  changeScrollTo(anchor) {
+    console.log(anchor)
+    switch (anchor) {
+      case 'about':
+        return this.about.current.refs.about.scrollIntoView({block: 'start', behavior: 'smooth'});
+
+      case 'projects':
+        return this.projects.current.refs.projects.scrollIntoView({block: 'start', behavior: 'smooth'});
+
+      case 'skills':
+        return this.skills.current.refs.skills.scrollIntoView({block: 'start', behavior: 'smooth'});
+      
+      case 'contact':
+        return this.contact.current.refs.contact.scrollIntoView({block: 'start', behavior: 'smooth'});
+
+      default: return
+    }
+    
+  } 
+  
+  scroll() {
+    
   }
 
   render() {
     return (
       <div className="App">
-        <NavBar changeScrollTo={this.changeScrollTo}/>
-        <About />
-        <Projects />
-        <Skills />
-        <Contact />
+        <NavBar changeScrollTo={this.changeScrollTo} about={this.about} contact={this.contact}/>
+        <About ref={this.about}/>
+        <Projects ref={this.projects}/>
+        <Skills ref={this.skills}/>
+        <Contact ref={this.contact}/>
       </div>
     );
   }
