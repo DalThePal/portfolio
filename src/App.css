@@ -14,7 +14,7 @@
     display: flex;
     flex-direction: row;
     height: 40px;
-    justify-content: space-between;
+    justify-content: flex-end;
     position: sticky;
     top: 0;
     width: 100%;
@@ -24,20 +24,48 @@
 a {
     color: #D5D8DC;
     font-family: quicksand;
-    margin: 10px;
     text-decoration: none;
-}
-
-.routes {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
 }
 
 .route {
     color: #D5D8DC;
     font-family: quicksand;
     margin: 10px;
+}
+
+.desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.mobile {
+    display: none;
+}
+
+.DropDown {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    top: 40px;
+    width: 200px;
+}
+
+.dropDownRoute {
+    align-items: center;
+    background-color: #424949;
+    color: #D5D8DC;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    width: 100%;
+}
+
+.dropDownRoute:hover {
+    background-color: #2a2e2e;
 }
 
 .About {
@@ -292,6 +320,14 @@ h3 {
     }
 
     .NavBar {
-        justify-content: space-around;
+        justify-content: flex-start;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: inline-block;
     }
 }
