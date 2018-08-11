@@ -7,7 +7,7 @@ class NavBar extends Component {
         return (
             <div className='NavBar'>
                 <div className='files'>
-                    <a href={pdf}>Resume</a>
+                    <a href={pdf} target='_blank'>Resume</a>
                 </div>
                 <div className='routes'>
                     <div className='route' onClick={() => this.props.changeScrollTo('about')}>About</div>
