@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 
 import NavBar from './components/NavBar';
 import About from './components/About';
@@ -23,7 +22,6 @@ class App extends Component {
   }
 
   changeScrollTo(anchor) {
-    console.log(anchor)
     switch (anchor) {
       case 'about':
         return this.about.current.refs.about.scrollIntoView({block: 'start', behavior: 'smooth'});

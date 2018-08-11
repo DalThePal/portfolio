@@ -14,11 +14,24 @@
     display: flex;
     flex-direction: row;
     height: 40px;
-    justify-content: flex-end;
+    justify-content: space-between;
     position: sticky;
     top: 0;
     width: 100%;
     z-index: 99;
+}
+
+a {
+    color: #D5D8DC;
+    font-family: quicksand;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.routes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .route {

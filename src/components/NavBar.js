@@ -1,17 +1,23 @@
 import React, { Component } from 'react';
+import pdf from '../files/web_dev_resume.pdf';
 
-export default class NavBar extends Component {
+class NavBar extends Component {
 
-   
-
-    render () {
+    render = () => {
         return (
             <div className='NavBar'>
-                <div className='route' onClick={() => this.props.changeScrollTo('about')}>About</div>
-                <div className='route' onClick={() => this.props.changeScrollTo('projects')}>Projects</div>
-                <div className='route' onClick={() => this.props.changeScrollTo('skills')}>Skills</div>
-                <div className='route' onClick={() => this.props.changeScrollTo('contact')}>Contact</div>
+                <div className='files'>
+                    <a href={pdf}>Resume</a>
+                </div>
+                <div className='routes'>
+                    <div className='route' onClick={() => this.props.changeScrollTo('about')}>About</div>
+                    <div className='route' onClick={() => this.props.changeScrollTo('projects')}>Projects</div>
+                    <div className='route' onClick={() => this.props.changeScrollTo('skills')}>Skills</div>
+                    <div className='route' onClick={() => this.props.changeScrollTo('contact')}>Contact</div>
+                </div>
             </div>
         )
     }
 }
+
+export default NavBar
