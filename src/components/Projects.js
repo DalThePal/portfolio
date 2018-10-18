@@ -4,16 +4,7 @@ import Project from './Project';
 export default class Projects extends Component {
     constructor() {
         super();
-        this.state = {
-            isDNDHovering: false,
-            isVHovering: false,
-            isPlantHovering: false,
-            isShedHovering: false
-        }
-    }
-
-    handleHoverChange(obj) {
-        this.setState(obj)
+        this.state = {}
     }
 
     render() {
@@ -23,27 +14,49 @@ export default class Projects extends Component {
                 <div className='projects-content'>
                     <Project 
                         title={'D&D Campaign Planner'}
-                        img={null}
+                        img={'/images/dnd1.png'}
                         liveSite={'https://www.dalthepal.com'}
                         repo={'https://github.com/DalThePal/personal-proj'}
                         route={null}
                     />
                     <Project
                         title={'VShoppify'}
-                        img={null}
+                        img={'/images/vShoppify.png'}
                         liveSite={null}
                         repo={'https://github.com/virtual-clothing/vr-store'}
                         route={null}
                     />
                     <Project
                         title={'PlantMe'}
-                        img={null}
+                        img={'/images/plantme1.png'}
                         liveSite={'https://plantme.dallenhoyal.com'}
                         repo={'https://github.com/DalThePal/plant-me'}
                         route={null}
                     />
+                    <Project
+                        title={'BitexMining'}
+                        img={'/images/BitexHomePage.png'}
+                        liveSite={'https://www.bitexmining.com'}
+                        repo={null}
+                        route={null}
+                    />
+                    <Project
+                        title={'BitSquad'}
+                        img={null}
+                        liveSite={null}
+                        repo={null}
+                        route={null}
+                    />
+                    <Project
+                        title={'BitDash'}
+                        img={null}
+                        liveSite={null}
+                        repo={null}
+                        route={null}
+                    />
+                    
                 </div>
             </div>
-        )
+        );
     }
 }

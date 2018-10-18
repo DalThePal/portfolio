@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
+button {
+    cursor: pointer;
+}
 
 .App {
     align-items: center;
@@ -76,21 +79,31 @@ a {
     width: 100%;
 }
 
+.profile-top {
+    
+    min-height: 95vh;
+}
+
 .background-img {
-    background-image: url('./images/pine-trees.jpg');
+    background-image: url('/images/pine-trees.jpg');
     height: 50vh;
     width: 100%;
 }
 
+.pic-wrapper {
+    position: absolute;
+    left: 50%;
+    top: 35vh;
+}
+
 .profile-pic {
-    background-image: url('./images/image_6483441.JPG');
+    background-image: url('/images/image_6483441.JPG');
     background-position: center;
     background-size: cover;
-    /* border: 2px solid black; */
     border-radius: 50%;
-    /* height: 200px; */
-    position: absolute;
-    top: 35vh;
+    position: relative;
+    
+    left: -50%;
     height: 20vw;
     min-height: 200px;
     width: 20vw;
@@ -98,21 +111,34 @@ a {
     z-index: 9;
 }
 
-.full-name {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 100%;
+.f_name-wrapper {
+    position: absolute;
+    right: 50%;
+    width: 25%;
+}
+
+.l_name-wrapper {
+    position: absolute;
+    left: 50%;
+    width: 25%;
 }
 
 .first-name {
+    display: flex;
     font-family: quicksand;
     font-size: 42pt;
+    justify-content: flex-end;
+    left: -50%;
+    position: relative;
 }
 
 .last-name {
+    display: flex;
     font-family: quicksand;
     font-size: 42pt;
+    justify-content: flex-start;
+    right: -50%;
+    position: relative;
 }
 
 .profile {
@@ -194,61 +220,25 @@ h1 {
 }
 
 .Project {
+    background-position: center;
+    background-size: cover;
+    border: 2px solid black;
+    /* box-sizing: border-box; */
     height: 300px;
     margin: 10px;
-    width: 300px;
-}
-
-.project-pic-dnd {
-    background-image: url('./images/dnd1.png');
-    background-position: center;
-    background-size: cover;
-    border: 2px solid black;
-    height: 300px;
-    width: 300px;
-}
-
-.project-pic-v {
-    background-image: url('./images/vShoppify.png');
-    background-position: center;
-    background-size: cover;
-    border: 2px solid black;
-    height: 300px;
-    object-fit: cover;
-    object-position: center;
-    width: 300px;
-}
-
-.project-pic-plant {
-    background-image: url('./images/plantme1.png');
-    background-position: center;
-    background-size: cover;
-    border: 2px solid black;
-    height: 300px;
-    object-fit: cover;
-    object-position: center;
-    width: 300px;
-}
-
-.project-pic-shed {
-    background-image: url('./images/shedwool.png');
-    background-position: center;
-    background-size: cover;
-    border: 2px solid black;
-    height: 300px;
-    object-fit: cover;
-    object-position: center;
     width: 300px;
 }
 
 .project-info {
     align-items: center;
     background-color: rgba(0,0,0,.5);
+    background-position: center;
+    /* box-sizing: border-box; */
     display: flex;
     flex-direction: column;
     height: 300px;
     justify-content: center;
-    position: absolute;
+    position: relative;
     text-align: center;
     width: 300px;
     z-index: 9;
@@ -257,6 +247,11 @@ h1 {
 .button-container {
     display: flex;
     justify-content: space-around;
+}
+
+.project-link {
+    color: white;
+    margin: 5px;
 }
 
 .Skills {
@@ -311,13 +306,24 @@ h3 {
         width: 75%;
     }
 
-    .full-name {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
+    .f_name-wrapper {
+        top: 70%;
+        width: 50%;
+    }
+
+    .first-name {
         justify-content: center;
-        margin-top: 200px;
-        width: 100%;
+        left: 50%
+    }
+
+    .l_name-wrapper {
+        top: 80%;
+        width: 50%;
+    }
+
+    .last-name {
+        justify-content: center;
+        right: 50%;
     }
 
     input {

@@ -8,6 +8,7 @@ class Project extends Component {
             liveSite: props.liveSite,
             repo: props.repo,
             route: props.route,
+            img: props.img,
             isHovering: false
         }
     }
@@ -17,36 +18,40 @@ class Project extends Component {
     }
 
     render() {
+
+        var style = {
+            backgroundImage: 'url(' + this.state.img + ')'
+        }
+
         return (
-            <div className='Project'>
-                <div 
-                    className='project-pic-dnd' 
-                    onClick={() => this.handleHoverChange()} 
-                    onMouseEnter={() => this.handleHoverChange()} 
-                    onMouseLeave={() => this.handleHoverChange()}
-                >
-                    {this.state.isHovering ? 
-                        <div className='project-info'>
-                            <h2>{this.state.title}</h2>
-                            <div className='button-container'>
-                                {this.state.liveSite ? 
-                                    <a href={this.state.liveSite}><button onClick={(e) => e.stopPropagation()}>LIVE SITE</button></a> 
-                                    : ""
-                                }
-                                {this.state.repo ?
-                                    <a href={this.state.repo}><button onClick={(e) => e.stopPropagation()}>GITHUB</button></a>
-                                    : ""
-                                }
-                                {this.state.route ?
-                                    <a href={this.state.repo}><button onClick={(e) => e.stopPropagation()}>LEARN MORE</button></a>
-                                    : ""
-                                }
-                            </div>
-                        </div> 
-                        : ""
-                    }
-                </div>
-            </div>
+            <div 
+                className="Project"
+                style={style} 
+                onClick={() => this.handleHoverChange()} 
+                onMouseEnter={() => this.handleHoverChange()} 
+                onMouseLeave={() => this.handleHoverChange()}
+            >
+                {this.state.isHovering ? 
+                    <div className='project-info'>
+                        <h2>{this.state.title}</h2>
+                        <div className='button-container'>
+                            {this.state.liveSite ? 
+                                <a class="project-link" href={this.state.liveSite} target='_blank'>LIVE SITE</a> 
+                                : ""
+                            }
+                            {this.state.repo ?
+                                <a class="project-link" href={this.state.repo} target='_blank'>GITHUB</a>
+                                : ""
+                            }
+                            {this.state.route ?
+                                <a class="project-link" href={this.state.repo} target='_blank'>LEARN MORE</a>
+                                : ""
+                            }
+                        </div>
+                    </div> 
+                    : ""
+                }
+            </div>  
         );
     }
 }

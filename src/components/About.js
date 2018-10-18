@@ -5,12 +5,18 @@ export default class About extends Component {
     render() {
         return (
             <div className='About'>
+                
                 <div className='background-img'></div>
-                <div className='profile-pic'></div>
+                
                 <div className='profile'>
-                    <div className='full-name'>
+                    <div className='f_name-wrapper'>
                         <div className='first-name'>DALLEN</div>
+                    </div>
+                    <div className='l_name-wrapper'>
                         <div className='last-name'>HOYAL</div>
+                    </div>
+                    <div className='pic-wrapper'>
+                        <div className='profile-pic'></div>
                     </div>
                     <div className='profile-content' ref='about'>
                         <h1 className='about-header'>ABOUT ME</h1>

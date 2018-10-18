@@ -26,7 +26,7 @@ class NavBar extends Component {
                 </div>
                 <div className='mobile'>
                     <img 
-                        src={require('../images/menu_icon_LIGHTGRAY.png')} 
+                        src='/menu_icon_LIGHTGRAY.png'
                         alt='dropdown' 
                         width='40px' 
                         onClick={() => this.handleChange({isHidden: !this.state.isHidden})}

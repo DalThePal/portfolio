@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Skill from './Skill';
 
 export default class Skills extends Component {
     constructor() {
@@ -13,50 +14,50 @@ export default class Skills extends Component {
             <div className='Skills' ref='skills'>
                 <h1>SKILLS</h1>
                 <div className='skills-content'>
-                    <div className='skill'>
-                        <img className='skill-picture' src={require('../images/react-icon.png')}></img>
-                        <h3>REACT</h3>
-                    </div>
-                    <div className='skill'>
-                        <img className='skill-picture' src={require('../images/redux-icon.png')}></img>
-                        <h3>REDUX</h3>
-                    </div>
-                    <div className='skill'>
-                        <img className='skill-picture' src={require('../images/vue-logo.png')}></img>
-                        <h3>VUE</h3>
-                    </div>
-                    <div className='skill'>
-                        <img className='skill-picture' src={require('../images/vuex-icon.png')}></img>
-                        <h3>VUEX</h3>
-                    </div>
-                    <div className='skill'>
-                        <img className='skill-picture' src={require('../images/javascript-logo.png')}></img>
-                        <h3>JAVASCRIPT</h3>
-                    </div>
-                    <div className='skill'>
-                        <img className='skill-picture' src={require('../images/html-logo.png')}></img>
-                        <h3>HTML5</h3>
-                    </div>
-                    <div className='skill'>
-                        <img className='skill-picture' src={require('../images/css3-logo.png')}></img>
-                        <h3>CSS3</h3>
-                    </div>
-                    <div className='skill'>
-                        <img className='skill-picture' src={require('../images/sass-icon.png')}></img>
-                        <h3>SASS</h3>
-                    </div>
-                    <div className='skill'>
-                        <img className='skill-picture' src={require('../images/nodejs-logo.png')}></img>
-                        <h3>NODE</h3>
-                    </div>
-                    <div className='skill'>
-                        <img className='skill-picture' src={require('../images/postgresql-logo.png')}></img>
-                        <h3>POSTGRESQL</h3>
-                    </div>
-                    <div className='skill'>
-                        <img className='skill-picture' src={require('../images/python-logo.png')}></img>
-                        <h3>PYTHON</h3>
-                    </div>
+                    <Skill 
+                        title={'React'}
+                        img={'/images/react-icon.png'}
+                    />
+                    <Skill
+                        title={'Redux'}
+                        img={'/images/redux-icon.png'}
+                    />
+                    <Skill
+                        title={'Vue'}
+                        img={'/images/vue-logo.png'}
+                    />
+                    <Skill
+                        title={'VueX'}
+                        img={'/images/vuex-icon.png'}
+                    />
+                    <Skill
+                        title={'JavaScript'}
+                        img={'/images/javascript-logo.png'}
+                    />
+                    <Skill
+                        title={'HTML5'}
+                        img={'/images/html-logo.png'}
+                    />
+                    <Skill
+                        title={'CSS3'}
+                        img={'/images/css3-logo.png'}
+                    />
+                    <Skill
+                        title={'SASS'}
+                        img={'/images/sass-icon.png'}
+                    />
+                    <Skill
+                        title={'Node'}
+                        img={'/images/nodejs-logo.png'}
+                    />
+                    <Skill
+                        title={'PostgreSQL'}
+                        img={'/images/postgresql-logo.png'}
+                    />
+                    <Skill
+                        title={'Python'}
+                        img={'/images/python-logo.png'}
+                    />
                 </div>
             </div>
         )
