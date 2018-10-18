@@ -39,10 +39,6 @@ class App extends Component {
     }
     
   } 
-  
-  scroll() {
-    
-  }
 
   render() {
     return (
