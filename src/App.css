@@ -29,7 +29,7 @@ button {
 .Header {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-color: #EAEDED;
 
@@ -119,12 +119,13 @@ a {
 .background-img {
     background-image: url('/images/pine-trees.jpg');
     height: 50vh;
-    width: 100%;
+    width: 100vw;
 }
 
 .pic-wrapper {
-    position: absolute;
     left: 50%;
+    position: absolute;
+    
 }
 
 .profile-pic {
@@ -137,22 +138,22 @@ a {
     margin-top: -50%;
     left: -50%;
     height: 20vw;
-    min-height: 200px;
+    min-height: 175px;
     width: 20vw;
-    min-width: 200px;
+    min-width: 175px;
     z-index: 9;
 }
 
 .f_name-wrapper {
-    position: absolute;
     right: 50%;
     width: 25%;
+    position: absolute;
 }
 
 .l_name-wrapper {
-    position: absolute;
     left: 50%;
     width: 25%;
+    position: absolute;
 }
 
 .first-name {
@@ -175,7 +176,7 @@ a {
 
 .profile-gap {
     height: 50vh;
-    position: relative;
+    width: 100vw;
 }
 
 .profile-content {
@@ -248,8 +249,8 @@ h1 {
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 100px;
-    padding-left: 10%;
-    padding-right: 10%;
+   
+    width: 100%;
 }
 
 .Project {
@@ -340,21 +341,21 @@ h3 {
     }
 
     .f_name-wrapper {
-        top: 30%;
         width: 50%;
     }
 
     .first-name {
+        margin-top: 50%;
         justify-content: center;
         left: 50%
     }
 
     .l_name-wrapper {
-        top: 45%;
         width: 50%;
     }
 
     .last-name {
+        margin-top: 80%;
         justify-content: center;
         right: 50%;
     }
