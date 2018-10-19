@@ -4,20 +4,8 @@ export default class About extends Component {
 
     render() {
         return (
-            <div className='About'>
-                <div className='background-img'></div>
-                <div className='profile-gap'>
-                    <div className='f_name-wrapper'>
-                        <div className='first-name'>DALLEN</div>
-                    </div>
-                    <div className='l_name-wrapper'>
-                        <div className='last-name'>HOYAL</div>
-                    </div>
-                    <div className='pic-wrapper'>
-                        <div className='profile-pic'></div>
-                    </div>
-                </div>
-                <div className='profile-content' ref='about'>
+            <div className='About' ref='about'>
+                <div className='profile-content'>
                     <h1 className='about-header'>ABOUT ME</h1>
                     <p className='about-paragraph'>
                         I am a Junior Web Developer that strives for excellence in everything I do.   My

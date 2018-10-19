@@ -2,10 +2,6 @@ import React, { Component } from 'react';
 import Project from './Project';
 
 export default class Projects extends Component {
-    constructor() {
-        super();
-        this.state = {}
-    }
 
     render() {
         return (
