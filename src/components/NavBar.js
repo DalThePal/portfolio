@@ -18,17 +18,26 @@ class NavBar extends Component {
         return (
             <div className='NavBar'>
                 <div className='desktop'>
-                    <div className='route' onClick={() => this.props.changeScrollTo('about')}>About</div>
-                    <div className='route' onClick={() => this.props.changeScrollTo('projects')}>Projects</div>
-                    <div className='route' onClick={() => this.props.changeScrollTo('skills')}>Skills</div>
-                    <div className='route' onClick={() => this.props.changeScrollTo('contact')}>Contact</div>
-                    <a className='route' href={pdf} target='_blank'>Resume</a>
+                    <img 
+                        className='menu-img' 
+                        src="/icons/DH-white.png" 
+                        width="30px;"
+                        onClick={() => this.props.changeScrollTo('picture')}
+                    />
+                    <div className="route-container">
+                        <div className='route' onClick={() => this.props.changeScrollTo('about')}>About</div>
+                        <div className='route' onClick={() => this.props.changeScrollTo('projects')}>Projects</div>
+                        <div className='route' onClick={() => this.props.changeScrollTo('skills')}>Skills</div>
+                        <div className='route' onClick={() => this.props.changeScrollTo('contact')}>Contact</div>
+                        <a className='route' href={pdf} target='_blank'>Resume</a>
+                    </div>
                 </div>
                 <div className='mobile'>
                     <img 
-                        src='/menu_icon_LIGHTGRAY.png'
+                        className='menu-img'
+                        src='/icons/DH-white.png'
                         alt='dropdown' 
-                        width='40px' 
+                        width='30px' 
                         onClick={() => this.handleChange({isHidden: !this.state.isHidden})}
                     />
                 </div>

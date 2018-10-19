@@ -2,10 +2,6 @@ import React, { Component } from 'react';
 import Project from './Project';
 
 export default class Projects extends Component {
-    constructor() {
-        super();
-        this.state = {}
-    }
 
     render() {
         return (
@@ -14,42 +10,42 @@ export default class Projects extends Component {
                 <div className='projects-content'>
                     <Project 
                         title={'D&D Campaign Planner'}
-                        img={'/images/dnd1.png'}
+                        img={'/images/dnd/dnd1.png'}
                         liveSite={'https://www.dalthepal.com'}
                         repo={'https://github.com/DalThePal/personal-proj'}
                         route={null}
                     />
                     <Project
                         title={'VShoppify'}
-                        img={'/images/vShoppify.png'}
+                        img={'/images/vShoppify/vShoppify.png'}
                         liveSite={null}
                         repo={'https://github.com/virtual-clothing/vr-store'}
                         route={null}
                     />
                     <Project
                         title={'PlantMe'}
-                        img={'/images/plantme1.png'}
+                        img={'/images/plantMe/plantme1.png'}
                         liveSite={'https://plantme.dallenhoyal.com'}
                         repo={'https://github.com/DalThePal/plant-me'}
                         route={null}
                     />
                     <Project
                         title={'BitexMining'}
-                        img={'/images/BitexHomePage.png'}
+                        img={'/images/bitex/BitexHomePage.png'}
                         liveSite={'https://www.bitexmining.com'}
                         repo={null}
                         route={null}
                     />
                     <Project
                         title={'BitSquad'}
-                        img={null}
+                        img={'/images/bitSquad/BitSquad-Main.png'}
                         liveSite={null}
                         repo={null}
                         route={null}
                     />
                     <Project
                         title={'BitDash'}
-                        img={null}
+                        img={'/images/bitDash/BitDash-Main.png'}
                         liveSite={null}
                         repo={null}
                         route={null}
