@@ -32,8 +32,13 @@ a {
 
 .route {
     color: #D5D8DC;
+    cursor: pointer;
     font-family: quicksand;
     margin: 10px;
+}
+
+.route:hover {
+    color: white;
 }
 
 .desktop {
@@ -93,7 +98,7 @@ a {
 .pic-wrapper {
     position: absolute;
     left: 50%;
-    top: 35vh;
+    top: 50vh;
 }
 
 .profile-pic {
@@ -103,6 +108,7 @@ a {
     border-radius: 50%;
     position: relative;
     
+    top: 50%;
     left: -50%;
     height: 20vw;
     min-height: 200px;
@@ -141,12 +147,8 @@ a {
     position: relative;
 }
 
-.profile {
-    align-items: center;
-    background-color: #EAEDED;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+.profile-gap {
+    height: 50vh;
 }
 
 .profile-content {
@@ -154,9 +156,8 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 100px;
-    padding-top: 80px;
     width: 50%;
+    padding: 80px;
 }
 
 .about-paragraph {
