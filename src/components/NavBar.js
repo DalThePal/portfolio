@@ -20,7 +20,7 @@ class NavBar extends Component {
                 <div className='desktop'>
                     <img 
                         className='menu-img' 
-                        src="/DH-white.png" 
+                        src="/icons/DH-white.png" 
                         width="30px;"
                         onClick={() => this.props.changeScrollTo('picture')}
                     />
@@ -35,7 +35,7 @@ class NavBar extends Component {
                 <div className='mobile'>
                     <img 
                         className='menu-img'
-                        src='/DH-white.png'
+                        src='/icons/DH-white.png'
                         alt='dropdown' 
                         width='30px' 
                         onClick={() => this.handleChange({isHidden: !this.state.isHidden})}
