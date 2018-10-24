@@ -8,10 +8,10 @@ class Header extends Component {
                 <div className='background-img'></div>
                 <div className='profile-gap'>
                     <div className='f_name-wrapper'>
-                        <div className='first-name'>COME</div>
+                        <div className='first-name'>UR</div>
                     </div>
                     <div className='l_name-wrapper'>
-                        <div className='last-name'>OVER</div>
+                        <div className='last-name'>GAY</div>
                     </div>
                     <div className='pic-wrapper'>
                         <div className='profile-pic'></div>
