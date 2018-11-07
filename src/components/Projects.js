@@ -29,13 +29,13 @@ export default class Projects extends Component {
                         repo={'https://github.com/DalThePal/plant-me'}
                         route={null}
                     />
-                    <Project
+                    {/* <Project
                         title={'BitexMining'}
                         img={'/images/bitex/BitexHomePage.png'}
                         liveSite={'https://www.bitexmining.com'}
                         repo={null}
                         route={null}
-                    />
+                    /> */}
                     <Project
                         title={'BitSquad'}
                         img={'/images/bitSquad/BitSquad-Main.png'}
