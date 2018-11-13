@@ -11,21 +11,21 @@ export default class Projects extends Component {
                     <Project 
                         title={'D&D Campaign Planner'}
                         img={'/images/dnd/dnd1.png'}
-                        liveSite={'https://www.dalthepal.com'}
+                        liveSite={'http://www.dalthepal.com'}
                         repo={'https://github.com/DalThePal/personal-proj'}
                         route={null}
                     />
                     <Project
                         title={'VShoppify'}
                         img={'/images/vShoppify/vShoppify.png'}
-                        liveSite={null}
+                        liveSite={'http://vshoppify.com'}
                         repo={'https://github.com/virtual-clothing/vr-store'}
                         route={null}
                     />
                     <Project
                         title={'PlantMe'}
                         img={'/images/plantMe/plantme1.png'}
-                        liveSite={'https://plantme.dallenhoyal.com'}
+                        liveSite={'http://plantme.dallenhoyal.com'}
                         repo={'https://github.com/DalThePal/plant-me'}
                         route={null}
                     />
