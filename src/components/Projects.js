@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import Project from './Project';
 
-export default class Projects extends Component {
-
+class Projects extends Component {
+    
     render() {
         return (
             <div className='Projects' ref='projects'>
@@ -10,45 +10,46 @@ export default class Projects extends Component {
                 <div className='projects-content'>
                     <Project 
                         title={'D&D Campaign Planner'}
-                        img={'/images/dnd/dnd1.png'}
-                        liveSite={'http://www.dalthepal.com'}
-                        repo={'https://github.com/DalThePal/personal-proj'}
-                        route={null}
+                        imgs={[
+                            '/images/dnd/dnd1.png',
+                            '/images/dnd/screen.png',
+                            '/images/dnd/dashboard.png',
+                            '/images/dnd/create.png',
+                            '/images/dnd/edit.png'
+                        ]}
+                        route={'/projects/DnD'}
                     />
                     <Project
                         title={'VShoppify'}
-                        img={'/images/vShoppify/vShoppify.png'}
-                        liveSite={'http://vshoppify.com'}
-                        repo={'https://github.com/virtual-clothing/vr-store'}
-                        route={null}
+                        imgs={[
+                            '/images/vShoppify/vShoppify.png',
+                            '/images/vShoppify/vr.png',
+                            '/images/vShoppify/men.png',
+                            '/images/vShoppify/cart.png',
+                            '/images/vShoppify/review.png',
+                            '/images/vShoppify/item-page.png',
+                            '/images/vShoppify/chatbot.png',
+                        ]}
+                        route={'/projects/Vshoppify'}
                     />
                     <Project
                         title={'PlantMe'}
-                        img={'/images/plantMe/plantme1.png'}
-                        liveSite={'http://plantme.dallenhoyal.com'}
-                        repo={'https://github.com/DalThePal/plant-me'}
-                        route={null}
-                    />
-                    {/* <Project
-                        title={'BitexMining'}
-                        img={'/images/bitex/BitexHomePage.png'}
-                        liveSite={'https://www.bitexmining.com'}
-                        repo={null}
-                        route={null}
-                    /> */}
-                    <Project
-                        title={'BitSquad'}
-                        img={'/images/bitSquad/BitSquad-Main.png'}
-                        liveSite={null}
-                        repo={null}
-                        route={null}
+                        imgs={[
+                            '/images/plantMe/plantme1.png',
+                            '/images/plantMe/plants.png',
+                            '/images/plantMe/plant.png'
+                        ]}
+                        route={'/projects/PlantMe'}
                     />
                     <Project
-                        title={'BitDash'}
-                        img={'/images/bitDash/BitDash-Main.png'}
-                        liveSite={null}
-                        repo={null}
-                        route={null}
+                        title={'Bitex Dashboard'}
+                        imgs={[
+                            '/images/bitexDash/BitDash-Main.png',
+                            '/images/bitexDash/BitDash-Account.png',
+                            '/images/bitexDash/BitDash-AccountEdit.png',
+                            '/images/bitexDash/BitDash-CSV.png',
+                        ]}
+                        route={'/projects/BitexDash'}
                     />
                     
                 </div>
@@ -56,3 +57,5 @@ export default class Projects extends Component {
         );
     }
 }
+
+export default Projects;

@@ -1,32 +1,48 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
 
 class Project extends Component {
     constructor(props) {
         super(props);
+        this.changeImage = this.changeImage.bind(this);
         this.state = {
             title: props.title,
-            liveSite: props.liveSite,
-            repo: props.repo,
             route: props.route,
-            img: props.img,
-            isHovering: false
+            imgs: props.imgs,
+            isHovering: false,
+            style: {},
+            i: 0
         }
+    }
+
+    componentDidMount() {
+        this.changeImage()
     }
 
     handleHoverChange() {
         this.setState({isHovering: !this.state.isHovering});
     }
 
-    render() {
-
-        var style = {
-            backgroundImage: 'url(' + this.state.img + ')'
+    changeImage() {
+        if(this.state.i === this.props.imgs.length) {
+            this.setState({i: 0});
         }
+        this.setState({
+            style: {
+                backgroundImage: `url(${this.state.imgs[this.state.i]})`,
+            },
+            i: this.state.i + 1
+        });
+        setTimeout(this.changeImage, 4000);
+    }
 
+    render() {        
         return (
             <div 
                 className="Project"
-                style={style} 
+                style={this.state.style} 
                 onClick={() => this.handleHoverChange()} 
                 onMouseEnter={() => this.handleHoverChange()} 
                 onMouseLeave={() => this.handleHoverChange()}
@@ -35,16 +51,8 @@ class Project extends Component {
                     <div className='project-info'>
                         <h2>{this.state.title}</h2>
                         <div className='button-container'>
-                            {this.state.liveSite ? 
-                                <a class="project-link" href={this.state.liveSite} target='_blank'>LIVE SITE</a> 
-                                : ""
-                            }
-                            {this.state.repo ?
-                                <a class="project-link" href={this.state.repo} target='_blank'>GITHUB</a>
-                                : ""
-                            }
                             {this.state.route ?
-                                <a class="project-link" href={this.state.repo} target='_blank'>LEARN MORE</a>
+                                <Link className="project-link" to={this.state.route}>LEARN MORE</Link>
                                 : ""
                             }
                         </div>

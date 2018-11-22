@@ -29,7 +29,7 @@ class NavBar extends Component {
                         <div className='route' onClick={() => this.props.changeScrollTo('projects')}>Projects</div>
                         <div className='route' onClick={() => this.props.changeScrollTo('skills')}>Skills</div>
                         <div className='route' onClick={() => this.props.changeScrollTo('contact')}>Contact</div>
-                        <a className='route' href={pdf} target='_blank'>Resume</a>
+                        {/* <a className='route' href={pdf} target='_blank'>Resume</a> */}
                     </div>
                 </div>
                 <div className='mobile'>
@@ -54,7 +54,7 @@ const DropDown = (props) => {
             <div className='dropDownRoute' onClick={() => {props.changeScrollTo('projects'); props.handleChange({isHidden: false})}}>Projects</div>
             <div className='dropDownRoute' onClick={() => {props.changeScrollTo('skills'); props.handleChange({isHidden: false})}}>Skills</div>
             <div className='dropDownRoute' onClick={() => {props.changeScrollTo('contact'); props.handleChange({isHidden: false})}}>Contact</div>
-            <a className='dropDownRoute' href={pdf} target='_blank'>Resume</a>
+            {/* <a className='dropDownRoute' href={pdf} target='_blank'>Resume</a> */}
         </div>
     )
 }
