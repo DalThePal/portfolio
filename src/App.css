@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
 
+p {
+    font-family: quicksand;
+    font-size: 15pt;
+    margin: 0px;
+    /* text-align: center; */
+}
 
 button {
     cursor: pointer;
@@ -29,10 +35,9 @@ button {
 .Header {
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-color: #EAEDED;
-
 }
 
 a {
@@ -119,7 +124,7 @@ a {
 .background-img {
     background-image: url('/images/pine-trees.jpg');
     height: 50vh;
-    width: 100vw;
+    width: 100%;
 }
 
 .pic-wrapper {
@@ -176,7 +181,7 @@ a {
 
 .profile-gap {
     height: 50vh;
-    width: 100vw;
+    width: 100%;
 }
 
 .profile-content {
@@ -231,6 +236,7 @@ button {
 
 h1 {
     font-family: quicksand;
+    text-align: center;
 }
 
 .Projects {
@@ -254,12 +260,15 @@ h1 {
 }
 
 .Project {
+    background-color: black;
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
     border: 2px solid black;
     /* box-sizing: border-box; */
     height: 300px;
     margin: 10px;
+    /* transition: 1s; */
     width: 300px;
 }
 
@@ -274,6 +283,7 @@ h1 {
     justify-content: center;
     position: relative;
     text-align: center;
+    top: 0;
     width: 300px;
     z-index: 9;
 }
@@ -335,6 +345,84 @@ h3 {
     color: black;
 }
 
+.row {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.row-links {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.github {
+    color: black;
+    font-family: quicksand;
+    font-size: 15pt;
+    margin-right: 20px;
+}
+
+.live-site {
+    color: black;
+    font-family: quicksand;
+    font-size: 15pt;
+}
+
+.projectDetails {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 80px;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 100%;
+}
+
+.projectDetails h1 {
+    margin-bottom: 20px;
+}
+
+.back-link {
+    color: black;
+    font-family: quicksand;
+    font-size: 20pt;
+    font-weight: bold;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.row .desc {
+    width: 50%;
+}
+
+.row img {
+    background-color: black;
+    border: 2px solid black;
+    box-sizing: border-box;
+    display: block;
+    object-fit: cover;
+}
+
+.socialLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 80px;
+    width: 25%;
+}
+
 @media only screen and (max-width: 600px) {
     .profile-content {
         width: 75%;
@@ -385,5 +473,24 @@ h3 {
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .row .desc {
+        margin: 20px;
+        width: 80%;
+        text-align: center;
+    }
+
+    .row .img1 {
+        width: 80%;
+        height: 150px;
+    }
+
+    .row .img2 {
+        width: 80%
     }
 }
