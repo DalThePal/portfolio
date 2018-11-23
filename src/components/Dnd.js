@@ -19,10 +19,10 @@ class Dnd extends Component {
                         it allows you to create, edit, delete, and save your own Monsters, 
                         Spells and Items for quick reference throughout gameplay.
                     </p>
-                    <img className='img1' src='/images/dnd/dnd1.png' width='400px' height='200px'/>
+                    <img className='img1' src='/images/dnd/dnd1-min.png' width='400px' height='200px'/>
                 </div>
                 <div className='row'>
-                    <img className='img1' src='/images/dnd/screen.png' width='400px' height='200px' />
+                    <img className='img1' src='/images/dnd/screen-min.png' width='400px' height='200px' />
                     <p className='desc'>
                         This is the "Mounts & Vehicles" section. It displays a card for 
                         each item in this list with a search bar in the header to quickly 
@@ -41,10 +41,10 @@ class Dnd extends Component {
                         The "DEL" button will delete the link. The "DISPLAY ALL" button on
                         the top will display all of the saved cards at once.
                     </p>
-                    <img className='img2' src='/images/dnd/dashboard.png' width='200px' height='400px' />
+                    <img className='img2' src='/images/dnd/dashboard-min.png' width='200px' height='400px' />
                 </div>
                 <div className='row'>
-                    <img className='img1' src='/images/dnd/create.png' width='400px' height='200px' />
+                    <img className='img1' src='/images/dnd/create-min.png' width='400px' height='200px' />
                     <p className='desc'>
                         At the end of each section there is a blank card that allows you to 
                         create an item of your choice. Once created, the item is saved in the
@@ -58,7 +58,7 @@ class Dnd extends Component {
                         items that you have already created.  You are even able to add it to 
                         your dashboard for quick reference during gameplay.
                     </p>
-                    <img className='img1' src='/images/dnd/edit.png' width='450px' height='200px' />
+                    <img className='img1' src='/images/dnd/edit-min.png' width='450px' height='200px' />
                 </div>
                 <Link className='back-link' to='/'>&#8678; PROJECTS</Link>
             </div>

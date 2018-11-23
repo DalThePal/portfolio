@@ -22,10 +22,10 @@ class Vshoppify extends Component {
                         AFrame was used to create an alternative Virtual Reality shopping experience 
                         for users.
                     </p>
-                    <img className='img1' src='/images/vShoppify/vShoppify.png' width='400px' height='200px'/>
+                    <img className='img1' src='/images/vShoppify/vShoppify-min.png' width='400px' height='200px'/>
                 </div>
                 <div className='row'>
-                    <img className='img1' src='/images/vShoppify/item-page.png' width='400px' height='200px' />
+                    <img className='img1' src='/images/vShoppify/item-page-min.png' width='400px' height='200px' />
                     <p className='desc'>
                         Here is the item details page. Each item sold on the site directs to its
                         own page that looks identical to this one.  It allows you to choose your
@@ -39,10 +39,10 @@ class Vshoppify extends Component {
                         This review consists of your name, how many stars you wish to rate the item,
                         and a comment explaining why that rating was given. 
                     </p>
-                    <img className='img1' src='/images/vShoppify/review.png' width='400px' height='200px' />
+                    <img className='img1' src='/images/vShoppify/review-min.png' width='400px' height='200px' />
                 </div>
                 <div className='row'>
-                    <img className='img2' src='/images/vShoppify/chatbot.png' width='250px' height='300px' />
+                    <img className='img2' src='/images/vShoppify/chatbot-min.png' width='250px' height='300px' />
                     <p className='desc'>
                         My team and I incorporated a chatbot to assist with the shopping
                         experience.  When asked questions or given commands like "Help me 
@@ -58,10 +58,10 @@ class Vshoppify extends Component {
                         subtotal, tax, and total are calculated and displayed as well as a 
                         payment option through Stripe.
                     </p>
-                    <img className='img1' src='/images/vShoppify/cart.png' width='400px' height='200px' />
+                    <img className='img1' src='/images/vShoppify/cart-min.png' width='400px' height='200px' />
                 </div>
                 <div className='row'>
-                    <img className='img1' src='/images/vShoppify/account.png' width='400px' height='200px' />
+                    <img className='img1' src='/images/vShoppify/account-min.png' width='400px' height='200px' />
                     <p className='desc'>
                         Upon logging in, the user is redirected to the account page.  This
                         page displays all of the applicable account information for the user
@@ -74,7 +74,7 @@ class Vshoppify extends Component {
                         using Aframe. This allows your cart to be viewed in a fitting room, and 
                         lets you explore the store we built.
                     </p>
-                    <img className='img1' src='/images/vShoppify/vr.png' width='400px' height='200px' />
+                    <img className='img1' src='/images/vShoppify/vr-min.png' width='400px' height='200px' />
                 </div>
                 <Link className='back-link' to='/'>&#8678; PROJECTS</Link>
             </div>

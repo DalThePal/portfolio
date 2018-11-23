@@ -11,43 +11,43 @@ class Projects extends Component {
                     <Project 
                         title={'D&D Campaign Planner'}
                         imgs={[
-                            '/images/dnd/dnd1.png',
-                            '/images/dnd/screen.png',
-                            '/images/dnd/dashboard.png',
-                            '/images/dnd/create.png',
-                            '/images/dnd/edit.png'
+                            '/images/dnd/dnd1-min.png',
+                            '/images/dnd/screen-min.png',
+                            '/images/dnd/dashboard-min.png',
+                            '/images/dnd/create-min.png',
+                            '/images/dnd/edit-min.png'
                         ]}
                         route={'/projects/DnD'}
                     />
                     <Project
                         title={'VShoppify'}
                         imgs={[
-                            '/images/vShoppify/vShoppify.png',
-                            '/images/vShoppify/vr.png',
-                            '/images/vShoppify/men.png',
-                            '/images/vShoppify/cart.png',
-                            '/images/vShoppify/review.png',
-                            '/images/vShoppify/item-page.png',
-                            '/images/vShoppify/chatbot.png',
+                            '/images/vShoppify/vShoppify-min.png',
+                            '/images/vShoppify/vr-min.png',
+                            '/images/vShoppify/men-min.png',
+                            '/images/vShoppify/cart-min.png',
+                            '/images/vShoppify/review-min.png',
+                            '/images/vShoppify/item-page-min.png',
+                            '/images/vShoppify/chatbot-min.png',
                         ]}
                         route={'/projects/Vshoppify'}
                     />
                     <Project
                         title={'PlantMe'}
                         imgs={[
-                            '/images/plantMe/plantme1.png',
-                            '/images/plantMe/plants.png',
-                            '/images/plantMe/plant.png'
+                            '/images/plantMe/plantme1-min.png',
+                            '/images/plantMe/plants-min.png',
+                            '/images/plantMe/plant-min.png'
                         ]}
                         route={'/projects/PlantMe'}
                     />
                     <Project
                         title={'Bitex Dashboard'}
                         imgs={[
-                            '/images/bitexDash/BitDash-Main.png',
-                            '/images/bitexDash/BitDash-Account.png',
-                            '/images/bitexDash/BitDash-AccountEdit.png',
-                            '/images/bitexDash/BitDash-CSV.png',
+                            '/images/bitexDash/BitDash-Main-min.png',
+                            '/images/bitexDash/BitDash-Account-min.png',
+                            '/images/bitexDash/BitDash-AccountEdit-min.png',
+                            '/images/bitexDash/BitDash-CSV-min.png',
                         ]}
                         route={'/projects/BitexDash'}
                     />

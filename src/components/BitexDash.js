@@ -17,10 +17,10 @@ class BitexDash extends Component {
                         login and view their account information, how much their mining machine
                         has earned them, and the current price of popular crypto currencies.
                     </p>
-                    <img className='img1' src='/images/bitexDash/BitDash-Main.png' width='400px' height='200px'/>
+                    <img className='img1' src='/images/bitexDash/BitDash-Main-min.png' width='400px' height='200px'/>
                 </div>
                 <div className='row'>
-                    <img className='img1' src='/images/bitexDash/BitDash-AccountEdit.png' width='400px' height='200px' />
+                    <img className='img1' src='/images/bitexDash/BitDash-AccountEdit-min.png' width='400px' height='200px' />
                     <p className='desc'>
                         Here the customer is able to edit their email and  wallet address where 
                         it is then saved in the database as well as reflected in the company's CRM
@@ -33,10 +33,10 @@ class BitexDash extends Component {
                         able to view a detailed list of their earnings showing the date it was paid,
                         the gross amount, any fees that were deducted, and the net amount.
                     </p>
-                    <img className='img1' src='/images/bitexDash/BitDash-Payouts(1).png' width='400px' height='200px' />
+                    <img className='img1' src='/images/bitexDash/BitDash-Payouts(1)-min.png' width='400px' height='200px' />
                 </div>
                 <div className='row'>
-                    <img className='img1' src='/images/bitexDash/BitDash-CSV.png' width='400px' height='200px' />
+                    <img className='img1' src='/images/bitexDash/BitDash-CSV-min.png' width='400px' height='200px' />
                     <p className='desc'>
                         This page is only accessible by an authorized employee.  Here they are able 
                         to take a spread sheet exports as a CSV document and upload it.  This populates

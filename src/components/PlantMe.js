@@ -18,10 +18,10 @@ class PlantMe extends Component {
                         given to me.  The purpose of this project is to demonstrate my
                         capability of replicating a design when given to me.
                     </p>
-                    <img className='img1' src='/images/plantMe/plantme1.png' width='400px' height='200px'/>
+                    <img className='img1' src='/images/plantMe/plantme1-min.png' width='400px' height='200px'/>
                 </div>
                 <div className='row'>
-                    <img className='img1' src='/images/plantMe/plants.png' width='400px' height='200px' />
+                    <img className='img1' src='/images/plantMe/plants-min.png' width='400px' height='200px' />
                     <p className='desc'>
                         Here the items available for purchase are shown.  A custom dropdown
                         menu allows the plants to be filtered by how easy they are to care for.
@@ -32,7 +32,7 @@ class PlantMe extends Component {
                         Clicking on a plant will display a modal with more information such as the
                         name, price, and the ability to add it to your cart.
                     </p>
-                    <img className='img1' src='/images/plantMe/plant.png' width='400px' height='200px' />
+                    <img className='img1' src='/images/plantMe/plant-min.png' width='400px' height='200px' />
                 </div>
                 <Link className='back-link' to='/'>&#8678; PROJECTS</Link>
             </div>
