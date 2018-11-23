@@ -268,7 +268,7 @@ h1 {
     /* box-sizing: border-box; */
     height: 300px;
     margin: 10px;
-    transition: .25s;
+    transition: .5s;
     width: 300px;
 }
 
