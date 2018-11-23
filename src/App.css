@@ -268,7 +268,7 @@ h1 {
     /* box-sizing: border-box; */
     height: 300px;
     margin: 10px;
-    /* transition: 1s; */
+    transition: .25s;
     width: 300px;
 }
 
@@ -413,6 +413,7 @@ h3 {
     box-sizing: border-box;
     display: block;
     object-fit: cover;
+    
 }
 
 .socialLinks {
