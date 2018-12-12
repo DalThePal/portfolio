@@ -13,7 +13,8 @@ class Project extends Component {
             imgs: props.imgs,
             isHovering: false,
             style: {},
-            i: 0
+            i: 0,
+            currentImg: null
         }
     }
 
@@ -21,18 +22,16 @@ class Project extends Component {
         this.changeImage()
     }
 
-    handleHoverChange() {
-        this.setState({isHovering: !this.state.isHovering});
-    }
+    // handleHoverChange() {
+    //     this.setState({isHovering: !this.state.isHovering});
+    // }
 
     changeImage() {
         if(this.state.i === this.props.imgs.length) {
             this.setState({i: 0});
         }
         this.setState({
-            style: {
-                backgroundImage: `url(${this.state.imgs[this.state.i]})`,
-            },
+            currentImg: this.props.imgs[this.state.i],
             i: this.state.i + 1
         });
         setTimeout(this.changeImage, 4000);
@@ -42,12 +41,13 @@ class Project extends Component {
         return (
             <div 
                 className="Project"
-                style={this.state.style} 
-                onClick={() => this.handleHoverChange()} 
-                onMouseEnter={() => this.handleHoverChange()} 
-                onMouseLeave={() => this.handleHoverChange()}
+                // style={this.state.style} 
+                // onClick={() => this.handleHoverChange()} 
+                // onMouseEnter={() => this.handleHoverChange()} 
+                // onMouseLeave={() => this.handleHoverChange()}
             >
-                {this.state.isHovering ? 
+                <Link className="project-link" to={this.state.route}><img src={this.state.currentImg} height='100%' width='100%'/></Link>
+                {/* {this.state.isHovering ? 
                     <div className='project-info'>
                         <h2>{this.state.title}</h2>
                         <div className='button-container'>
@@ -58,7 +58,7 @@ class Project extends Component {
                         </div>
                     </div> 
                     : ""
-                }
+                } */}
             </div>  
         );
     }
