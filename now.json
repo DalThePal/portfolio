@@ -3,5 +3,6 @@
     "name": "portfolio",
     "builds": [
         { "src": "package.json", "use": "@now/static-build", "config": { "distDir": "build" } }
-    ]
+    ],
+    "alias": ["dallenhoyal.comno"]
 }
