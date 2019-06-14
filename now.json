@@ -4,5 +4,5 @@
     "builds": [
         { "src": "package.json", "use": "@now/static-build", "config": { "distDir": "build" } }
     ],
-    "alias": ["dallenhoyal.com"]
+    "alias": ["dallenhoyal.com", "www.dallenhoyal.com"]
 }
