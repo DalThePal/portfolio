@@ -9,7 +9,7 @@ class Dnd extends Component {
                 <h1>DND CAMPAIGN PLANNER</h1>
                 <div className='row-links'>
                     <a className='github' href='https://github.com/DalThePal/personal-proj' target='_blank'>GitHub</a>
-                    <a className='live-site' href='http://www.dalthepal.com' target='_blank'>Live Site</a>
+                    {/* <a className='live-site' href='http://www.dalthepal.com' target='_blank'>Live Site</a> */}
                 </div>
                 <div className='row'>
                     <p className='desc'>
